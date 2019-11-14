@@ -1,0 +1,12 @@
+<div class="game">
+<div #gameField
+     id="gameField"
+     [ngStyle]="{'background-color':'#000000',
+                           'position':'relative',
+                           'width':(numCols * gemSize) + 'px',
+                           'height':(numRows * gemSize) + 'px'}"
+     (tap)="onTap($event)">
+>
+  <div #marker ></div>
+</div>
+</div>

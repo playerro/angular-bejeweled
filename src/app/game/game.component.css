@@ -1,0 +1,15 @@
+#gameField {
+background-color: black;
+margin: auto;
+}
+.game {
+  min-height:100vh;
+  display: flex;
+}
+.gem {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  border: 1px solid white;
+  cursor: pointer;
+}
