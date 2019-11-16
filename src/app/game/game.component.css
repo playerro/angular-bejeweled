@@ -13,3 +13,8 @@ margin: auto;
   border: 1px solid white;
   cursor: pointer;
 }
+.marker {
+  border: 5px solid white;
+  position: absolute;
+  display: none;
+}
