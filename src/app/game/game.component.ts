@@ -18,8 +18,8 @@ export class GameComponent implements OnInit {
 
   bgColors = ['magenta', 'mediumblue', 'yellow', 'lime', 'cyan', 'orange', 'crimson', 'gray'];
 
-  @ViewChild('gameField', {read: ElementRef}) gameField: ElementRef;
-  @ViewChild('marker', {read: ElementRef}) marker: ElementRef;
+  @ViewChild('gameField', { read: ElementRef, static: true }) gameField: ElementRef;
+  @ViewChild('marker', { read: ElementRef, static: true }) marker: ElementRef;
 
   selectedRow = -1;
   selectedCol = -1;
