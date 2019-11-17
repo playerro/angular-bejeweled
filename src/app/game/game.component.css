@@ -18,3 +18,10 @@ margin: auto;
   position: absolute;
   display: none;
 }
+.points {
+  color: white;
+  position: absolute;
+  top: -8%;
+  left: 45%;
+  font-size: larger;
+}

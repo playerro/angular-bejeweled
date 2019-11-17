@@ -1,12 +1,19 @@
 <div class="game">
+
 <div #gameField
      id="gameField"
      [ngStyle]="{'background-color':'#000000',
                            'position':'relative',
                            'width':(numCols * gemSize) + 'px',
                            'height':(numRows * gemSize) + 'px'}"
-     (tap)="onTap($event)">
+     (tap)="onTap($event)"
+     (swipeleft)="swipe($event, $event.type)"
+     (swiperight)="swipe($event, $event.type)"
+     (swipeup)="swipe($event, $event.type)"
+     (swipedown)="swipe($event, $event.type)"
+
 >
+  <div class="points">Points: {{points}}</div>
   <div #marker></div>
 </div>
 </div>

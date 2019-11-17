@@ -3,21 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
-import { GamefieldComponent } from './gamefield/gamefield.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import * as Hammer from 'hammerjs';
 
 export class MyHammerConfig extends HammerGestureConfig  {
   overrides = <any>{
-    'swipe': {velocity: 0.4, threshold: 20} // override default settings
-  }
+    'swipe': { direction: Hammer.DIRECTION_ALL }
+  };
 }
 
 @NgModule({
   declarations: [
     AppComponent,
     GameComponent,
-    GamefieldComponent
   ],
   imports: [
     BrowserModule,
@@ -30,3 +29,4 @@ export class MyHammerConfig extends HammerGestureConfig  {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
