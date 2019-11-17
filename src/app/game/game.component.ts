@@ -409,5 +409,19 @@ export class GameComponent implements OnInit {
       }
     }
   }
+  help() {
+    if (this.gameState === 'pick') {
+      this.selectedRow = -1;
+      this.selectedCol = -1;
+      this.posY = -1;
+      this.posX = -1;
+      for (let i = 0; i < this.numCols; i ++) {
+        this.removeGems(this.numRows - 1, i);
+      }
+      this.gemFade();
+      this.gameState = 'remove';
+      this.checkFalling();
+    }
+  }
 
 }

@@ -22,6 +22,13 @@ margin: auto;
   color: white;
   position: absolute;
   top: -8%;
-  left: 40%;
+  left: 30%;
+  font-size: larger;
+}
+.help {
+  color: white;
+  position: absolute;
+  top: -8%;
+  left: 60%;
   font-size: larger;
 }
