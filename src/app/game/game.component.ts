@@ -415,6 +415,7 @@ export class GameComponent implements OnInit {
       this.selectedCol = -1;
       this.posY = -1;
       this.posX = -1;
+      this.points -= 10;
       for (let i = 0; i < this.numCols; i ++) {
         this.removeGems(this.numRows - 1, i);
       }
