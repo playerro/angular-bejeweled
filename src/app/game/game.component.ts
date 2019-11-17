@@ -12,7 +12,7 @@ export class GameComponent implements OnInit {
   gemClass = 'gem';
   gemIDPrefix = 'gem';
   numRows = 7;
-  numCols = 6;
+  numCols = 5;
   jewels = [];
   gameState = 'pick';
 
